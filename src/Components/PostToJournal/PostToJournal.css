@@ -1,0 +1,78 @@
+.post-to-journal-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-to-journal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.date-input,
+.description-input,
+.account-dropdown,
+.amount-input {
+  width: calc(100% - 40px); /* Adjusted to accommodate the remove button */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.debit-section,
+.credit-section {
+  margin-bottom: 20px;
+}
+
+.add-field-button,
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Center the buttons */
+}
+
+.add-field-button:hover,
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.debit-field,
+.credit-field {
+  display: flex;
+  align-items: center;
+  position: relative; /* For the remove button positioning */
+}
+
+.debit-field select,
+.credit-field select {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.debit-field input,
+.credit-field input {
+  flex: 1;
+}
+
+.remove-field-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30px; /* Adjust the position */
+}
+
+.remove-field-button:hover {
+  background-color: #cc0000;
+}

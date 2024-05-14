@@ -1,0 +1,42 @@
+.sidebar-container {
+    background-color: #333; /* Adjust as needed */
+    padding: 20px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    margin-top: 20px;
+}
+
+.sidebar-title {
+    margin-bottom: 20px;
+    color: #fff; /* Adjust text color */
+}
+
+.sidebar-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #fff; /* Adjust text color */
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background-color: #555; /* Adjust hover background color */
+}
