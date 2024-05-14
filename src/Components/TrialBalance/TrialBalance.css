@@ -1,0 +1,23 @@
+.trial-balance-container {
+    margin: 20px;
+}
+
+.trial-balance-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trial-balance-table th,
+.trial-balance-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.trial-balance-table th {
+    background-color: #f2f2f2;
+}
+
+.total-row td {
+    font-weight: bold;
+}

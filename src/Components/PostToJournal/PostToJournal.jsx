@@ -8,7 +8,6 @@ const PostToJournal = () => {
     const [date, setDate] = useState('');
     const [description, setDescription] = useState('');
     const [accountOptions, setAccountOptions] = useState([]);
-    const [creditOptions, setCreditOptions] = useState([]);
 
     useEffect(() => {
         fetch('http://localhost:5000/account/getAllAccounts')
@@ -78,6 +77,12 @@ const PostToJournal = () => {
         try {
             const response = await axios.post('http://localhost:5000/journal/post', formData);
             console.log('Form submitted successfully:', response.data);
+
+            // Clear form fields after successful submission
+            setDate('');
+            setDescription('');
+            setDebitFields([{ account: '', amount: '' }]);
+            setCreditFields([{ account: '', amount: '' }]);
         } catch (error) {
             console.error('Error submitting form:', error);
         }

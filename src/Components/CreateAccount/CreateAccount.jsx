@@ -16,11 +16,18 @@ const CreateAccount = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/api/createAccount', {
+            const response = await axios.post('http://localhost:5000/account/createAccount', {
                 accountName,
                 accountType
             });
             console.log('Account created successfully:', response.data);
+
+            // Clear form fields
+            setAccountName('');
+            setAccountType('');
+
+            // Refresh the page
+            window.location.reload();
         } catch (error) {
             console.error('Error creating account:', error);
         }

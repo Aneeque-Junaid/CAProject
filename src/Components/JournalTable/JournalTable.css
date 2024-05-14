@@ -1,6 +1,6 @@
 .journal-table-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 .table-heading {
@@ -10,6 +10,7 @@
 .journal-table {
     width: 100%;
     border-collapse: collapse;
+    margin: 0 auto; /* Center the table horizontally */
 }
 
 .journal-table th, .journal-table td {
@@ -32,4 +33,5 @@
 
 .debit-cell p, .credit-cell p {
     margin: 0; /* Remove default paragraph margin */
+    text-align: center; /* Center the content inside cells */
 }
