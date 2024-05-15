@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import './TrialBalance.css'; // Import CSS file
+import './TrialBalance.css'; 
 
 const TrialBalance = () => {
     const [trialBalanceData, setTrialBalanceData] = useState([]);
 
     useEffect(() => {
-        // Fetch data from the server
         fetch('http://localhost:5000/account/getAllAccountDetails')
             .then(response => response.json())
             .then(data => setTrialBalanceData(data))
             .catch(error => console.error('Error fetching data:', error));
     }, []);
 
-    // Function to calculate total debit and credit for each account
     const calculateTotal = (details) => {
         let totalDebit = 0;
         let totalCredit = 0;
@@ -23,7 +21,6 @@ const TrialBalance = () => {
         return { totalDebit, totalCredit };
     };
 
-    // Function to calculate total debit and credit for all accounts
     const calculateGrandTotal = () => {
         let grandTotalDebit = 0;
         let grandTotalCredit = 0;

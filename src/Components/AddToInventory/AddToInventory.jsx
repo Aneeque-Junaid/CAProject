@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './AddToInventory.css'; // Import CSS file
+import './AddToInventory.css';
 
 const AddToInventory = () => {
     const [formData, setFormData] = useState({
@@ -27,9 +27,7 @@ const AddToInventory = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Check if the dropdown has been touched and has a selected value
         if (formData.paidWithAccount && touchedDropdown) {
-            // Send data to the server
             fetch('http://localhost:5000/inventory/addToInventory', {
                 method: 'POST',
                 headers: {
@@ -39,9 +37,7 @@ const AddToInventory = () => {
             })
             .then(response => response.json())
             .then(data => {
-                // Handle success
                 console.log('Item added successfully:', data);
-                // Clear form fields after successful submission
                 setFormData({
                     name: '',
                     category: '',
@@ -50,18 +46,15 @@ const AddToInventory = () => {
                     quantity: '',
                     paidWithAccount: ''
                 });
-                // Set formSubmitted to true to trigger page refresh
                 setFormSubmitted(true);
             })
             .catch(error => console.error('Error adding item:', error));
         } else {
-            // If dropdown is not selected, display an error message
             console.error('Please select an account.');
         }
     };
 
     useEffect(() => {
-        // If formSubmitted is true, reload the page to clear the form fields
         if (formSubmitted) {
             window.location.reload();
         }

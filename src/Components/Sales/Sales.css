@@ -14,7 +14,7 @@
   }
   
   input[type="number"] {
-    width: 120px; /* Adjust the width as needed */
+    width: 120px; 
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;

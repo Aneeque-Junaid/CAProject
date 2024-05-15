@@ -10,7 +10,6 @@ const InventoryReturn = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    // Fetching all items
     axios.get('http://localhost:5000/inventory/getAllItems')
       .then(response => {
         setItems(response.data);
@@ -30,19 +29,16 @@ const InventoryReturn = () => {
       return;
     }
 
-    // Forming the request body
     const requestBody = {
       id: itemId,
       quantity: quantity,
       returnToAccount: returnToAccount
     };
 
-    // Making the API call to return inventory
     axios.post('http://localhost:5000/inventory/returnInventory', requestBody)
       .then(response => {
         setSuccessMessage('Inventory returned successfully.');
         setErrorMessage('');
-        // Clearing form fields
         setItemId('');
         setQuantity(0);
         setReturnToAccount('');

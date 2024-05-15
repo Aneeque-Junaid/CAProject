@@ -10,7 +10,7 @@
 .journal-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto; /* Center the table horizontally */
+    margin: 0 auto; 
 }
 
 .journal-table th, .journal-table td {
@@ -28,10 +28,10 @@
 }
 
 .debit-cell, .credit-cell {
-    width: 120px; /* Adjust width of debit and credit cells */
+    width: 120px; 
 }
 
 .debit-cell p, .credit-cell p {
-    margin: 0; /* Remove default paragraph margin */
-    text-align: center; /* Center the content inside cells */
+    margin: 0; 
+    text-align: center; 
 }

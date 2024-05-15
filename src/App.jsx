@@ -6,7 +6,7 @@ import InventoryPage from './Pages/InventoryPage';
 import JournalPage from './Pages/JournalPage';
 import SalesPage from './Pages/SalesPage';
 import AccountsPage from './Pages/AccountsPage';
-import './App.css'; // Import your custom styles here
+import './App.css'; 
 
 const App = () => {
   return (

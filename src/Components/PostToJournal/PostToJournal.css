@@ -12,7 +12,7 @@
 .description-input,
 .account-dropdown,
 .amount-input {
-  width: calc(100% - 40px); /* Adjusted to accommodate the remove button */
+  width: calc(100% - 40px); 
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -34,7 +34,7 @@
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  margin: 0 auto; /* Center the buttons */
+  margin: 0 auto; 
 }
 
 .add-field-button:hover,
@@ -46,7 +46,7 @@
 .credit-field {
   display: flex;
   align-items: center;
-  position: relative; /* For the remove button positioning */
+  position: relative; 
 }
 
 .debit-field select,
@@ -70,7 +70,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -30px; /* Adjust the position */
+  right: -30px; 
 }
 
 .remove-field-button:hover {

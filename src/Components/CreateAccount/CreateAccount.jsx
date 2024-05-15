@@ -22,11 +22,9 @@ const CreateAccount = () => {
             });
             console.log('Account created successfully:', response.data);
 
-            // Clear form fields
             setAccountName('');
             setAccountType('');
 
-            // Refresh the page
             window.location.reload();
         } catch (error) {
             console.error('Error creating account:', error);

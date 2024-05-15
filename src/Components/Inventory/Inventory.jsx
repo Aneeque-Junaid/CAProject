@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './Inventory.css'; // Import CSS file
+import './Inventory.css'; 
 
 const Inventory = () => {
     const [inventoryData, setInventoryData] = useState([]);
 
     useEffect(() => {
-        // Fetch data from the server
         fetch('http://localhost:5000/inventory/getAllItems')
             .then(response => response.json())
             .then(data => setInventoryData(data))

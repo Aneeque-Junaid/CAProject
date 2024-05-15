@@ -5,7 +5,5 @@
 .content {
   flex-grow: 1;
   padding: 20px;
-  /* Adjust as needed */
   margin-left: 200px;
-  /* Ensure content starts after the sidebar */
 }

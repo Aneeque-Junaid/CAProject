@@ -10,7 +10,6 @@ const Sales = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    // Fetching all items
     axios.get('http://localhost:5000/inventory/getAllItems')
       .then(response => {
         setItems(response.data);
@@ -26,21 +25,17 @@ const Sales = () => {
       return;
     }
 
-    // Forming the request body
     const requestBody = {
       id: itemId,
       quantity: quantity
     };
 
-    // Making the API call to sell item
     axios.post('http://localhost:5000/sale/sellItem', requestBody)
       .then(response => {
         setSuccessMessage('Item sold successfully.');
         setErrorMessage('');
-        // Clear fields and refresh form
         setItemId('');
         setQuantity(0);
-        // Fetch items again to update dropdown
         axios.get('http://localhost:5000/inventory/getAllItems')
           .then(response => {
             setItems(response.data);

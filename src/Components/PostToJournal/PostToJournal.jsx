@@ -78,7 +78,6 @@ const PostToJournal = () => {
             const response = await axios.post('http://localhost:5000/journal/post', formData);
             console.log('Form submitted successfully:', response.data);
 
-            // Clear form fields after successful submission
             setDate('');
             setDescription('');
             setDebitFields([{ account: '', amount: '' }]);
