@@ -12,6 +12,8 @@ const Sidebar = () => {
           <li className="sidebar-item"><Link to="/account" className="sidebar-link">Account</Link></li>
           <li className="sidebar-item"><Link to="/sales" className="sidebar-link">Sales</Link></li>
           <li className="sidebar-item"><Link to="/inventory" className="sidebar-link">Inventory</Link></li>
+          <li className="sidebar-item"><Link to="/incomeStatement" className="sidebar-link">Income Statement</Link></li>
+          <li className="sidebar-item"><Link to="/balanceSheet" className="sidebar-link">Balance Sheet</Link></li>
         </ul>
       </div>
     </div>

@@ -57,9 +57,10 @@ const CreateAccount = () => {
                     >
                         <option value="">Select Account Type</option>
                         <option value="expense">Expense</option>
-                        <option value="income">Income</option>
+                        <option value="revenue">Revenue</option>
                         <option value="asset">Asset</option>
                         <option value="liability">Liability</option>
+                        <option value="equity">Equity</option>
                     </select>
                 </div>
                 <button type="submit" className="create-account-button">Create Account</button>
