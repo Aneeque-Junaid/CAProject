@@ -1,26 +1,44 @@
+/* JournalTable.css */
 .journal-table-container {
     max-width: 800px;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .table-heading {
     text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .journal-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .journal-table th, .journal-table td {
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     text-align: left;
-    padding: 8px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .journal-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.journal-table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+.journal-table tbody tr:hover {
+    background-color: #ddd;
 }
 
 .account-cell {
@@ -28,10 +46,10 @@
 }
 
 .debit-cell, .credit-cell {
-    width: 120px; 
+    width: 120px;
 }
 
 .debit-cell p, .credit-cell p {
-    margin: 0; 
-    text-align: center; 
+    margin: 0;
+    text-align: center;
 }

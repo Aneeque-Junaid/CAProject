@@ -1,40 +1,61 @@
+/* PostToJournal.css */
 .post-to-journal-form {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .post-to-journal-form label {
   display: block;
   margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
 }
 
 .date-input,
 .description-input,
 .account-dropdown,
 .amount-input {
-  width: calc(100% - 40px); 
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+.date-input:focus,
+.description-input:focus,
+.account-dropdown:focus,
+.amount-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 .debit-section,
 .credit-section {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .add-field-button,
 .submit-button {
   background-color: #4CAF50;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  margin: 0 auto; 
+  margin: 10px auto;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .add-field-button:hover,
@@ -46,7 +67,8 @@
 .credit-field {
   display: flex;
   align-items: center;
-  position: relative; 
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .debit-field select,
@@ -70,9 +92,15 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -30px; 
+  right: -30px;
 }
 
 .remove-field-button:hover {
   background-color: #cc0000;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
