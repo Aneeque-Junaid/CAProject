@@ -7,7 +7,6 @@ const JournalPage = () => {
     <div>
       <h2>Journal</h2>
       <PostToJournal />
-      <hr />
       <JournalTable />
     </div>
   );

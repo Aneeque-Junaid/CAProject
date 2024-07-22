@@ -1,14 +1,14 @@
-/* Sidebar.css */
+
 .sidebar-container {
-    background-color: #4CAF50; /* Consistent theme color */
+    background-color: #4CAF50;
     padding: 20px;
-    width: 200px; /* Slightly wider for better readability */
+    width: 200px;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
@@ -20,7 +20,7 @@
     color: #fff; 
     font-size: 24px;
     text-align: center;
-    border-bottom: 2px solid #fff; /* Add a bottom border for separation */
+    border-bottom: 2px solid #fff;
     padding-bottom: 10px;
 }
 
@@ -40,10 +40,10 @@
     display: block;
     padding: 10px;
     border-radius: 4px;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    transition: background-color 0.3s ease;
     text-align: center;
 }
 
 .sidebar-link:hover {
-    background-color: #45a049; /* Consistent hover color */
+    background-color: #45a049;
 }

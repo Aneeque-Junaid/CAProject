@@ -1,40 +1,40 @@
-/* SalesReturn.css */
+
 .sales-return-container {
-  max-width: 500px; /* Match width with other components */
-  margin: 20px auto; /* Consistent margin */
-  padding: 20px; /* Consistent padding */
-  background-color: #f9f9f9; /* Match background color */
-  border-radius: 8px; /* Consistent border radius */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent box shadow */
-  text-align: center; /* Center text */
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .sales-return-container h2 {
-  color: #4CAF50; /* Consistent heading color */
-  margin-bottom: 20px; /* Consistent margin */
-  font-size: 24px; /* Consistent font size */
-  border-bottom: 2px solid #4CAF50; /* Border-bottom for heading */
-  padding-bottom: 10px; /* Padding for border-bottom */
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
 }
 
 .form-group {
-  margin-bottom: 20px; /* Consistent margin-bottom */
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px; /* Consistent margin */
-  font-size: 16px; /* Consistent font size */
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 input[type="number"],
 select {
-  width: 100%; /* Match width with other components */
-  padding: 10px; /* Consistent padding */
-  border: 1px solid #ccc; /* Consistent border */
-  border-radius: 4px; /* Consistent border radius */
-  font-size: 16px; /* Consistent font size */
-  box-sizing: border-box; /* Ensure consistent sizing */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 select {
@@ -48,25 +48,25 @@ select {
 }
 
 button {
-  background-color: #4CAF50; /* Consistent button color */
-  color: white; /* Consistent text color */
-  padding: 10px 20px; /* Consistent padding */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px; /* Consistent border radius */
-  cursor: pointer; /* Consistent cursor */
-  font-size: 16px; /* Consistent font size */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-  background-color: #45a049; /* Consistent hover color */
+  background-color: #45a049;
 }
 
 .success {
-  color: green; /* Consistent success message color */
-  font-size: 16px; /* Consistent font size */
+  color: green;
+  font-size: 16px;
 }
 
 .error {
-  color: red; /* Consistent error message color */
-  font-size: 16px; /* Consistent font size */
+  color: red;
+  font-size: 16px;
 }

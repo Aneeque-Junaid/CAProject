@@ -7,7 +7,6 @@ const SalesPage = () => {
     <div>
       <h2>Sales</h2>
       <Sales />
-      <hr />
       <SalesReturn />
     </div>
   );

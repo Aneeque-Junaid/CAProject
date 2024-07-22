@@ -16,7 +16,7 @@
   margin-bottom: 5px;
   color: #333;
   font-weight: 500;
-  font-size: 16px; /* Ensure consistency in font size */
+  font-size: 16px;
 }
 
 .date-input,
@@ -29,7 +29,7 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 16px; /* Ensure consistency in font size */
+  font-size: 16px;
   color: #333;
   background-color: #fff;
 }
@@ -58,7 +58,7 @@
   cursor: pointer;
   display: block;
   margin: 10px auto;
-  font-size: 16px; /* Ensure consistency in font size */
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -106,6 +106,6 @@
 h2 {
   color: #4CAF50;
   margin-bottom: 15px;
-  font-size: 24px; /* Ensure consistency in font size */
+  font-size: 24px;
   text-align: center;
 }
