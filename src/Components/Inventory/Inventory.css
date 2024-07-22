@@ -1,19 +1,41 @@
 .inventory-container {
-    margin: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-container h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .inventory-table {
     width: 100%;
     border-collapse: collapse;
+    margin: 0 auto;
 }
 
-.inventory-table th,
-.inventory-table td {
-    border: 1px solid #dddddd;
-    padding: 8px;
+.inventory-table th, .inventory-table td {
+    border: 1px solid #ddd;
     text-align: left;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .inventory-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.inventory-table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+.inventory-table tbody tr:hover {
+    background-color: #ddd;
 }

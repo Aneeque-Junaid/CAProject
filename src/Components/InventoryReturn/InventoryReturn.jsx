@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './InventoryReturn.css';
 
 const InventoryReturn = () => {
   const [itemId, setItemId] = useState('');
@@ -71,7 +72,7 @@ const InventoryReturn = () => {
         <select id="returnToAccount" value={returnToAccount} onChange={(e) => setReturnToAccount(e.target.value)}>
           <option value="">Select an option</option>
           <option value="cash">Cash</option>
-          <option value="account_receivable">account_receivable</option>
+          <option value="account_receivable">Account Receivable</option>
         </select>
       </div>
       <button onClick={handleReturnSubmit}>Return</button>
