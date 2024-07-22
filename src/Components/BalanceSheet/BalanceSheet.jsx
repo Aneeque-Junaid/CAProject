@@ -9,7 +9,6 @@ const BalanceSheet = () => {
         fetch('http://localhost:5000/statement/balanceSheet')
             .then(response => response.json())
             .then(data => {
-                console.log(data);
                 setData(data);
                 setLoading(false);
             })
@@ -71,7 +70,7 @@ const BalanceSheet = () => {
                 </div>
             </div>
             <div className="section net-total">
-                <div className="item total-amount">
+                <div className="item">
                     <span className="account-name">Total Liabilities and Equities</span>
                     <span className="total">${totalLiabilitiesAndEquities.toFixed(2)}</span>
                 </div>

@@ -36,7 +36,7 @@ const TrialBalance = () => {
 
     return (
         <div className="trial-balance-container">
-            <h2>Trial Balance</h2>
+            <h2 className="table-heading">Trial Balance</h2>
             <table className="trial-balance-table">
                 <thead>
                     <tr>
@@ -49,14 +49,14 @@ const TrialBalance = () => {
                     {trialBalanceData.map(account => (
                         <tr key={account.accountId}>
                             <td>{account.accountName}</td>
-                            <td>{calculateTotal(account.details).totalDebit}</td>
-                            <td>{calculateTotal(account.details).totalCredit}</td>
+                            <td>{calculateTotal(account.details).totalDebit.toFixed(2)}</td>
+                            <td>{calculateTotal(account.details).totalCredit.toFixed(2)}</td>
                         </tr>
                     ))}
                     <tr className="total-row">
                         <td><strong>Total</strong></td>
-                        <td>{grandTotal.grandTotalDebit}</td>
-                        <td>{grandTotal.grandTotalCredit}</td>
+                        <td>{grandTotal.grandTotalDebit.toFixed(2)}</td>
+                        <td>{grandTotal.grandTotalCredit.toFixed(2)}</td>
                     </tr>
                 </tbody>
             </table>

@@ -7,7 +7,6 @@ import InventoryReturn from '../Components/InventoryReturn/InventoryReturn';
 const InventoryPage = () => {
   return (
     <div>
-      <h2>Inventory</h2>
       <AddToInventory />
       <Inventory />
       <InventoryReturn/>

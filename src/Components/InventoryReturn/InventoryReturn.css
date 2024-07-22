@@ -1,11 +1,19 @@
+/* InventoryReturn.css */
 .inventory-return-container {
-  max-width: 800px; /* Match width with JournalTable */
+  max-width: 800px; /* Consistent width with BalanceSheet */
   margin: 20px auto; /* Consistent margin */
   padding: 20px; /* Consistent padding */
-  background-color: #f9f9f9; /* Match background color */
+  background-color: #f9f9f9; /* Consistent background color */
   border-radius: 8px; /* Consistent border radius */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent box shadow */
-  text-align: center; /* Center text */
+}
+
+.inventory-return-container h2 {
+  margin-bottom: 20px; /* Spacing below heading */
+  text-align: center; /* Center heading */
+  color: #4CAF50; /* Consistent color */
+  border-bottom: 2px solid #4CAF50; /* Added border-bottom */
+  padding-bottom: 10px; /* Spacing for border */
 }
 
 .form-group {
@@ -13,18 +21,20 @@
 }
 
 label {
-  display: block; 
-  margin-bottom: 5px; 
-  font-size: 16px; /* Ensure consistency in font size */
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px; /* Consistent font size */
+  color: #555; /* Consistent label color */
 }
 
 input[type="number"],
 select {
   width: 100%; 
-  padding: 8px; 
+  padding: 10px; /* Consistent padding */
   border: 1px solid #ccc; 
   border-radius: 4px; 
-  font-size: 16px; /* Ensure consistency in font size */
+  font-size: 16px; /* Consistent font size */
+  box-sizing: border-box; /* Consistent sizing */
 }
 
 select {
@@ -44,19 +54,23 @@ button {
   border: none; 
   border-radius: 4px; 
   cursor: pointer; 
-  font-size: 16px; /* Ensure consistency in font size */
+  font-size: 16px; /* Consistent font size */
+  display: block; /* Block display for centering */
+  margin: 0 auto; /* Center button */
 }
 
 button:hover {
-  background-color: #45a049; /* Match hover color */
+  background-color: #45a049; /* Consistent hover color */
 }
 
 .success {
   color: green; 
-  font-size: 16px; /* Ensure consistency in font size */
+  font-size: 16px; /* Consistent font size */
+  text-align: center; /* Center success message */
 }
 
 .error {
   color: red; 
-  font-size: 16px; /* Ensure consistency in font size */
+  font-size: 16px; /* Consistent font size */
+  text-align: center; /* Center error message */
 }

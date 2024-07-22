@@ -1,6 +1,5 @@
-/* PostToJournal.css */
 .post-to-journal-form {
-  max-width: 600px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -13,19 +12,20 @@
   margin-bottom: 5px;
   color: #333;
   font-weight: 500;
+  font-size: 16px; /* Ensure consistency in font size */
 }
 
 .date-input,
 .description-input,
 .account-dropdown,
 .amount-input {
-  width: calc(100% - 40px);
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 16px; /* Ensure consistency in font size */
   color: #333;
   background-color: #fff;
 }
@@ -54,7 +54,7 @@
   cursor: pointer;
   display: block;
   margin: 10px auto;
-  font-size: 16px;
+  font-size: 16px; /* Ensure consistency in font size */
   font-weight: 600;
 }
 
@@ -102,5 +102,6 @@
 h2 {
   color: #4CAF50;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 24px; /* Ensure consistency in font size */
+  text-align: center;
 }
