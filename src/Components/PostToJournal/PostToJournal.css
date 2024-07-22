@@ -6,6 +6,10 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.journal-heading{
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+}
 
 .post-to-journal-form label {
   display: block;

@@ -20,7 +20,7 @@ const JournalTable = () => {
 
     return (
         <div className="journal-table-container">
-            <h2 className="table-heading">Data Display Table</h2>
+            <h2 className="table-heading">Journal Entries</h2>
             <table className="journal-table">
                 <thead>
                     <tr>

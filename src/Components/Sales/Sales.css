@@ -1,50 +1,72 @@
+/* Sales.css */
 .sales-container {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="number"] {
-    width: 120px; 
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .success {
-    color: green;
-  }
-  
-  .error {
-    color: red;
-  }
-  
+  max-width: 500px; /* Match width with other components */
+  margin: 20px auto; /* Consistent margin */
+  padding: 20px; /* Consistent padding */
+  background-color: #f9f9f9; /* Match background color */
+  border-radius: 8px; /* Consistent border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent box shadow */
+  text-align: center; /* Center text */
+}
+
+.sales-container h2 {
+  color: #4CAF50; /* Consistent heading color */
+  margin-bottom: 20px; /* Consistent margin */
+  font-size: 24px; /* Consistent font size */
+  border-bottom: 2px solid #4CAF50; /* Border-bottom for heading */
+  padding-bottom: 10px; /* Padding for border-bottom */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Consistent margin-bottom */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Consistent margin */
+  font-size: 16px; /* Consistent font size */
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px; /* Consistent padding */
+  border: 1px solid #ccc; /* Consistent border */
+  border-radius: 4px; /* Consistent border radius */
+  font-size: 16px; /* Consistent font size */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23333333" d="M12.8 4.3L8 9.1 3.2 4.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.3 5.3c.2.2.4.3.7.3s.5-.1.7-.3l5.3-5.3c.4-.4.4-1 0-1.4-.4-.5-1-.5-1.4 0z"/></svg>');
+  background-position: right 8px top 50%;
+  background-repeat: no-repeat;
+}
+
+button {
+  background-color: #4CAF50; /* Consistent button color */
+  color: white; /* Consistent text color */
+  padding: 10px 20px; /* Consistent padding */
+  border: none;
+  border-radius: 4px; /* Consistent border radius */
+  cursor: pointer; /* Consistent cursor */
+  font-size: 16px; /* Consistent font size */
+}
+
+button:hover {
+  background-color: #45a049; /* Consistent hover color */
+}
+
+.success {
+  color: green; /* Consistent success message color */
+  font-size: 16px; /* Consistent font size */
+}
+
+.error {
+  color: red; /* Consistent error message color */
+  font-size: 16px; /* Consistent font size */
+}

@@ -89,6 +89,7 @@ const PostToJournal = () => {
 
     return (
         <form className="post-to-journal-form" onSubmit={handleSubmit}>
+            <h2 className='journal-heading'>Post To Journal</h2>
             <div>
                 <label>Date:</label>
                 <input type="date" value={date} onChange={(e) => setDate(e.target.value)} className="date-input" />

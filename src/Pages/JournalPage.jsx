@@ -1,4 +1,3 @@
-// Journal.jsx
 import React from 'react';
 import PostToJournal from "../Components/PostToJournal/PostToJournal"
 import JournalTable from "../Components/JournalTable/JournalTable"

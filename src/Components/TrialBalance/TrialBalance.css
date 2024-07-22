@@ -14,6 +14,7 @@
     margin-bottom: 20px;
     font-size: 24px;
     border-bottom: 2px solid #4CAF50; /* Added border-bottom */
+    padding-bottom: 10px;
 }
 
 .trial-balance-table {

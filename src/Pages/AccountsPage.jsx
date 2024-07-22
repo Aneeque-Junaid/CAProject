@@ -1,4 +1,3 @@
-// Journal.jsx
 import React from 'react';
 import CreateAccount from "../Components/CreateAccount/CreateAccount"
 import TrialBalance from "../Components/TrialBalance/TrialBalance"

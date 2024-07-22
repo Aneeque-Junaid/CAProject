@@ -53,7 +53,7 @@ const Sales = () => {
 
   return (
     <div className="sales-container">
-      <h2>Sales</h2>
+      <h2>Sell Item</h2>
       <div className="form-group">
         <label htmlFor="item">Select Item:</label>
         <select id="item" value={itemId} onChange={(e) => setItemId(e.target.value)}>

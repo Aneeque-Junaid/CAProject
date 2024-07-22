@@ -1,4 +1,3 @@
-// Journal.jsx
 import React from 'react';
 import Sales from "../Components/Sales/Sales"
 import SalesReturn from "../Components/SalesReturn/SalesReturn"
